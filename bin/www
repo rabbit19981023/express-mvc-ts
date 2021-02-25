@@ -1,0 +1,8 @@
+const appModule = require('../build/app');
+const app = appModule.app;
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`The Server is Running at PORT:${PORT}......`);
+});
