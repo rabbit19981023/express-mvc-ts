@@ -12,7 +12,7 @@ export const connectDB = (): void => {
 			useUnifiedTopology: true
 		}
 	}
-
+	
 	// connecting to database (MongoDB)
 	mongoose.connect(dbConfig.uri, dbConfig.params)
 		.then(() => {
