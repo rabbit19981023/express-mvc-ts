@@ -1,9 +1,11 @@
 import mongoose from 'mongoose';
 
+require('dotenv').config();
+
 export const connectDB = (): void => {
 	// Database Config (MongoDB)
 	const dbConfig = {
-		uri: process.env.MONGODB_URI || "mongodb+srv://admin:smile123@cluster-test.3y2n1.mongodb.net/Cluster-test?retryWrites=true&w=majority",
+		uri: process.env.MONGODB_URI,
 		params: {
 			useNewUrlParser: true,
 			useCreateIndex: true,
