@@ -9,10 +9,10 @@ export const connectDB = (): void => {
 		params: {
 			useNewUrlParser: true,
 			useCreateIndex: true,
-			useUnifiedTopology: true
+			useUnifiedTopology: tru
 		}
 	}
-	
+
 	// connecting to database (MongoDB)
 	mongoose.connect(dbConfig.uri, dbConfig.params)
 		.then(() => {
