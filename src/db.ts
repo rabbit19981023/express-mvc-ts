@@ -9,7 +9,7 @@ export const connectDB = (): void => {
 		params: {
 			useNewUrlParser: true,
 			useCreateIndex: true,
-			useUnifiedTopology: tru
+			useUnifiedTopology: true
 		}
 	}
 
