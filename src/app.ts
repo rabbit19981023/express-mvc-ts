@@ -45,4 +45,4 @@ class App {
 
 
 // exports the express.app instance to ./bin/www which is the Entry Point of this web application
-export const app = new App().app;
+export default new App().app;
