@@ -13,8 +13,8 @@ export const getAllUsers = (callback: Function): void => {
 	userModel.find((err, users) => {
 		if (err) {
 			console.error(err);
-		} else {
-			callback(null, users);
 		}
+		
+		callback(null, users);
 	});
 }
